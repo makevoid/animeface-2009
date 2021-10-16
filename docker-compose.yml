@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  animeface:
+    image: makevoid/animeface
+    build:
+      context: .
+    # volumes:
+    #   - ./data:/data
