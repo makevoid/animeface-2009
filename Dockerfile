@@ -1,4 +1,4 @@
-FROM ruby:3.0.2-bullseye
+FROM ruby:2.6-bullseye
 
 RUN apt-get update -y
 
@@ -10,3 +10,12 @@ RUN gem install rmagick
 COPY . ./
 
 RUN ./build.sh
+
+WORKDIR animeface-ruby
+
+RUN pwd
+
+CMD ruby face_collector.rb --src ../data/input --dest ../data/output --threshold 0.2 --margin 0.1
+
+# options:
+# --threshold <0.0~1.0, default: 0.2> --margin <0.0~, default: 0.1>

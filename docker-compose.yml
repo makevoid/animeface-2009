@@ -5,5 +5,5 @@ services:
     image: makevoid/animeface
     build:
       context: .
-    # volumes:
-    #   - ./data:/data
+    volumes:
+      - ./data:/data
