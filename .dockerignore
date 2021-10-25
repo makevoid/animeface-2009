@@ -1,3 +1,7 @@
 ./data
 ./data*
 ./data *
+README.md
+Rakefile
+docker-compose.yml
+Dockerfile
