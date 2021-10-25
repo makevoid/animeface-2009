@@ -3,4 +3,4 @@ task :run do
   sh "./run.sh"
 end
 
-task default: :rake
+task default: :run
