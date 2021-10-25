@@ -1,5 +1,27 @@
 # AnimeFace 2009
 
+#### This Fork:
+
+This fork has a single command:
+
+    rake
+
+which will build and run the project via docker for you
+
+
+Just set up the `data` directory to have your images in the `input` directory
+
+The `rake` command will build and run the face detection and extraction, you will end up with the output images in the `output` directory ready to use for your StyleGAN / ML project.
+
+
+Enjoy!
+
+@makevoid
+
+-------
+
+#### ORIGINAL README
+
 The face detector for anime/manga.
 This is similar to [lbpcascade_animeface](https://github.com/nagadomi/lbpcascade_animeface), but it's more accurate and supports facial landmark detection.
 I developed this library in 2008~2009.
